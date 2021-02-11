@@ -1,0 +1,74 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
+
+.cont {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1vh;
+}
+.cont:first-of-type {
+  margin-top: 1vh;
+}
+
+.clear-fix::after {
+  content: ' ';
+  display: table;
+  clear: both;
+  background-color: black;
+}
+
+/*macro-sezioni*/
+
+nav {
+  background-color: violet;
+  height: 10vh;
+  margin-top: 1vh;
+}
+
+header {
+  background-color: yellow;
+  height: 30vh;
+}
+
+main {
+  background-color: dodgerblue;
+  height: 45vh;
+}
+
+footer {
+  background-color: purple;
+  height: 10vh;
+  margin: 0 auto;
+}
+
+/* sezioni */
+
+section:first-of-type {
+  background-color: lightblue;
+  width: 100%;
+  height: 14%;
+  margin-bottom: 1%;
+}
+
+.float {
+  float: left;
+  background-color: lightblue;
+  width: 25%;
+  height: 81%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+.float.first {
+  margin-left: 0;
+}
+
+.float.middle {
+  width: 48%;
+}
